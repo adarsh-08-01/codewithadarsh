@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codewithadarsh - C Programming Journey</title>
+    <meta name="description" content="Follow Adarsh's journey in learning C programming from Day 0 onwards.">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link rel="shortcut icon" href="img/c.png" type="image/x-icon">
+</head>
+
+<body data-theme="dark">
+    <!-- Top Navigation -->
+    <header class="navbar">
+        <div class="nav-left">
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                codewith<span class="brand-text">adarsh</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-link hidden-mobile">Home</a>
+            <a href="swift.html" class="nav-link hidden-mobile">Swift Series</a>
+            <a href="c.html" class="nav-link active hidden-mobile">C Series</a>
+        </div>
+    </header>
+
+    <div class="layout-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 style="color: #2b74b1;">C Journey</h3>
+                <p>Mastering the mother of all languages</p>
+            </div>
+            <nav class="sidebar-nav" id="sidebar-nav">
+                <!-- Links dynamically injected by script -->
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="main-content">
+            <article class="content-container" id="content-container">
+                <!-- Content dynamically injected by script -->
+                <div class="loader">
+                    <div class="spinner"></div>
+                </div>
+            </article>
+
+            <div class="content-navigation">
+                <button class="nav-btn" id="prev-btn" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Previous Topic
+                </button>
+                <button class="nav-btn next-btn" id="next-btn">
+                    Next Topic
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="c_content.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
