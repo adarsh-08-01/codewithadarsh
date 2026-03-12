@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>codewithadarsh - C Programming Journey</title>
-    <meta name="description" content="Follow Adarsh's journey in learning C programming from Day 0 onwards.">
+    <title>Adarsh Kashyap - iOS Developer & Video Editor</title>
+    <meta name="description" content="Portfolio and Swift learning journey of Adarsh Kashyap.">
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,77 +20,211 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
             rel="stylesheet">
     </noscript>
-    <link rel="shortcut icon" href="img/c.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/ -3.jpg" type="image/x-icon">
+    <style>
+        /* Specific Landing Page Styles */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 2rem;
+            animation: fadeIn 0.8s ease-out;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #F3F4F6, var(--brand-primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            background-color: var(--bg-surface-hover);
+            border-color: var(--brand-primary);
+            box-shadow: var(--shadow-md);
+            color: var(--brand-primary);
+        }
+
+        .social-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            padding: 1rem 2rem;
+            background-color: var(--brand-primary);
+            color: white !important;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(240, 81, 56, 0.39);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--brand-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(240, 81, 56, 0.5);
+        }
+
+        .skills-container {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .skill-tag {
+            background-color: var(--brand-light);
+            color: var(--brand-primary);
+            padding: 0.4rem 1rem;
+            border-radius: 99px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body data-theme="dark">
     <!-- Top Navigation -->
     <header class="navbar">
         <div class="nav-left">
-            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Sidebar">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <a href="index.html" class="logo">
                 <span class="logo-icon">&lt;/&gt;</span>
                 codewith<span class="brand-text">adarsh</span>
             </a>
         </div>
         <div class="nav-right">
-            <a href="index.html" class="nav-link hidden-mobile">Home</a>
-            <a href="swift.html" class="nav-link hidden-mobile">Swift Series</a>
-            <a href="c.html" class="nav-link active hidden-mobile">C Series</a>
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="swift.html" class="nav-link">Swift Series</a>
+            <a href="c.html" class="nav-link">C Series</a>
         </div>
     </header>
 
-    <div class="layout-wrapper">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <h3 style="color: #2b74b1;">C Journey</h3>
-                <p>Mastering the mother of all languages</p>
+    <div class="layout-wrapper" style="display: block; margin-top: var(--nav-height);">
+        <main class="hero">
+            <h1>Hi, I'm Adarsh Kashyap</h1>
+            <div class="skills-container">
+                <span class="skill-tag">iOS Developer</span>
+                <span class="skill-tag">Video Editor</span>
             </div>
-            <nav class="sidebar-nav" id="sidebar-nav">
-                <!-- Links dynamically injected by script -->
-            </nav>
-        </aside>
 
-        <!-- Main Content Area -->
-        <main class="main-content" id="main-content">
-            <article class="content-container" id="content-container">
-                <!-- Content dynamically injected by script -->
-                <div class="loader">
-                    <div class="spinner"></div>
-                </div>
-            </article>
+            <p>Welcome to my personal corner of the internet. I am passionate about crafting beautiful, smooth iOS
+                applications using Swift and creating engaging visual content through video editing.</p>
 
-            <div class="content-navigation">
-                <button class="nav-btn" id="prev-btn" disabled>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="19" y1="12" x2="5" y2="12"></line>
-                        <polyline points="12 19 5 12 12 5"></polyline>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/adarsh-kashyap-94238028b" target="_blank" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
                     </svg>
-                    Previous Topic
-                </button>
-                <button class="nav-btn next-btn" id="next-btn">
-                    Next Topic
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/adarsh-08-01" target="_blank" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
                     </svg>
-                </button>
+                    GitHub
+                </a>
+                <a href="https://www.youtube.com/@codewithadarsh08/shorts" target="_blank" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
+                        </path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                    YouTube
+                </a>
+                <a href="https://www.instagram.com/codewithadarsh08/reels/" target="_blank" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    Instagram
+                </a>
+                <a href="https://portfolio.malloy.sg/Adarshkashyap" target="_blank" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    Video Portfolio
+                </a>
+                <a href="mailto:contact@codewithadarsh.com" class="social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email Me
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="swift.html" class="btn-primary" style="background-color: #F05138;">My Swift Journey</a>
+                <a href="c.html" class="btn-primary"
+                    style="background-color: #2b74b1; box-shadow: 0 4px 14px 0 rgba(43, 116, 177, 0.39);">My C
+                    Journey</a>
             </div>
         </main>
     </div>
-
-    <!-- Mobile Overlay -->
-    <div class="overlay" id="overlay"></div>
-
-    <script src="c_content.js"></script>
-    <script src="app.js"></script>
 </body>
 
 </html>
